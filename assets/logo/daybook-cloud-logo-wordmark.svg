@@ -11,52 +11,25 @@
   <desc id="daybookLogoDesc-wordmark">Daybook.Cloud wordmark.</desc>
 
   <style>
-    .daybook-logo {
-      color-scheme: light dark;
-    }
-
     .daybook-logo__mark-bg {
-      fill: var(--daybook-logo-mark-bg, var(--tng-semantic-accent-brand, #2563eb));
+      fill: #104a7a;
     }
 
     .daybook-logo__mark-text {
-      fill: var(--daybook-logo-mark-text, var(--tng-semantic-foreground-inverse, #ffffff));
+      fill: #fff7cf;
     }
 
     .daybook-logo__title {
-      fill: var(--daybook-logo-title, var(--tng-semantic-foreground-primary, #111827));
+      fill: #104a7a;
     }
 
     .daybook-logo__caption {
-      fill: var(--daybook-logo-caption, var(--tng-semantic-foreground-muted, #6b7280));
+      fill: #5f6b54;
     }
 
     .daybook-logo__shadow {
-      flood-color: var(--daybook-logo-shadow, var(--tng-semantic-accent-brand, #2563eb));
+      flood-color: #104a7a;
       flood-opacity: var(--daybook-logo-shadow-opacity, 0.28);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .daybook-logo__mark-bg {
-        fill: var(--daybook-logo-mark-bg, var(--tng-semantic-accent-brand, #3b82f6));
-      }
-
-      .daybook-logo__mark-text {
-        fill: var(--daybook-logo-mark-text, var(--tng-semantic-foreground-inverse, #ffffff));
-      }
-
-      .daybook-logo__title {
-        fill: var(--daybook-logo-title, var(--tng-semantic-foreground-primary, #f9fafb));
-      }
-
-      .daybook-logo__caption {
-        fill: var(--daybook-logo-caption, var(--tng-semantic-foreground-muted, #cbd5e1));
-      }
-
-      .daybook-logo__shadow {
-        flood-color: var(--daybook-logo-shadow, var(--tng-semantic-accent-brand, #60a5fa));
-        flood-opacity: var(--daybook-logo-shadow-opacity, 0.34);
-      }
     }
   </style>
 
