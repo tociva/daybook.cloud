@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create products and services as items in Daybook.Cloud with a name, display name, category, code, barcode, and description.">
+    <meta name="theme-color" content="#104a7a">
+    <link rel="canonical" href="https://daybook.cloud/blogs/items/index.html">
+    <title>How to Create Items, Products, and Services in Daybook.Cloud</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo" aria-label="Daybook.Cloud home">
+                    <svg class="logo-wordmark" width="330" height="96" viewBox="0 0 330 96" role="img" aria-labelledby="headerDaybookLogoTitle headerDaybookLogoDesc" xmlns="http://www.w3.org/2000/svg">
+                        <title id="headerDaybookLogoTitle">Daybook.Cloud</title>
+                        <desc id="headerDaybookLogoDesc">Daybook.Cloud wordmark with Dive into Simplicity tagline.</desc>
+                        <defs>
+                            <filter id="headerLogoShadow" x="-35%" y="-35%" width="170%" height="170%">
+                                <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#9b8e43" flood-opacity="0.26" />
+                            </filter>
+                        </defs>
+                        <rect x="4" y="10" width="84" height="84" rx="26" fill="#104a7a" filter="url(#headerLogoShadow)" />
+                        <text x="46" y="62" fill="#fff7cf" font-family="Lobster, Roboto, system-ui, sans-serif" font-size="37" font-weight="400" font-style="normal" text-anchor="middle">D.C</text>
+                        <text x="112" y="51" fill="#111827" font-family="Lobster, Roboto, system-ui, sans-serif" font-size="36" font-weight="400" font-style="normal">Daybook.Cloud</text>
+                        <text x="115" y="77" fill="#5f6b54" font-family="Roboto, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" font-style="normal" letter-spacing="1">DIVE INTO SIMPLICITY</text>
+                    </svg>
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </label>
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/features.html" class="nav-link">Features</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/security.html" class="nav-link">Security</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                    <a href="https://app.daybook.cloud" class="nav-link">Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!-- Page Hero -->
+    <section class="hero blog-hero">
+        <div class="container">
+            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>Items, products, and services</span></nav>
+            <h1>How to create Items, Products, and Services in Daybook.Cloud?</h1>
+            <p class="section-intro">Create reusable item records for the products and services your business buys or sells, then use them across invoices and transactions.</p>
+            <div class="blog-meta" aria-label="Blog details">
+                <span>Author: <a href="https://www.linkedin.com/in/princekf/">Prince Francis</a></span>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/princekf/">princekf</a></span>
+                <span>Created at: <time datetime="2026-07-03T12:41:34+05:30">2026-07-03 12:41:34 IST</time></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article-section">
+        <div class="container">
+            <article class="blog-article">
+                <p>In Daybook.Cloud, an <strong>item</strong> is a reusable record for a product or service. Creating items once helps your team use consistent names, codes, categories, and descriptions whenever they prepare invoices or record transactions.</p>
+                <p>For example, you can create product items such as Wireless Mouse, Computer and Accessories, or Office Stationery, and service items such as Software Development, Internet and Cloud Services, or Auditing and Tax Filing.</p>
+
+                <h2>Before you start</h2>
+                <p>Keep these details ready for each product or service:</p>
+                <ul>
+                    <li><strong>Name:</strong> The complete internal name, such as Wireless Mouse or Software Development.</li>
+                    <li><strong>Display Name:</strong> The shorter name shown when the item is used, such as Mouse.</li>
+                    <li><strong>Category:</strong> The product or service category that the item belongs to.</li>
+                    <li><strong>Code:</strong> A unique, recognisable item code, such as WM-001.</li>
+                    <li><strong>Barcode:</strong> Optional. Add the product barcode when one is available.</li>
+                    <li><strong>Description:</strong> Optional internal notes that help your team identify or use the item.</li>
+                </ul>
+
+                <h2>Step 1: Open the Items page</h2>
+                <p>Go to <strong>Trading</strong> and select <strong>Item</strong> from the left menu. The Items page shows the products and services already created for your company.</p>
+                <figure class="blog-figure">
+                    <img src="items-list.png" alt="Items page in Daybook.Cloud with the Item menu and New item button highlighted">
+                    <figcaption>Open Trading, select Item, then click New item.</figcaption>
+                </figure>
+
+                <h2>Step 2: Review existing items</h2>
+                <p>Before adding another record, check the list for the same name, display name, code, or barcode. Avoiding duplicate items keeps invoice selection and reporting clear.</p>
+
+                <h2>Step 3: Click New item</h2>
+                <p>Click <strong>New item</strong> at the top right. Daybook.Cloud opens the Create Item form.</p>
+
+                <h2>Step 4: Enter the item identity</h2>
+                <p>Enter the <strong>Name</strong>, <strong>Display Name</strong>, and <strong>Code</strong>. Use a name that clearly identifies the product or service and a code that your team can recognise quickly.</p>
+                <figure class="blog-figure">
+                    <img src="create-item-form.png" alt="Create Item form in Daybook.Cloud showing name, display name, category, code, barcode, description, and save button">
+                    <figcaption>Enter the item identity, choose a category, add optional details, then save.</figcaption>
+                </figure>
+
+                <h3>Example: Wireless Mouse</h3>
+                <ul>
+                    <li><strong>Name:</strong> Wireless Mouse</li>
+                    <li><strong>Display Name:</strong> Mouse</li>
+                    <li><strong>Category:</strong> Select the relevant product category, such as Computer and Accessories.</li>
+                    <li><strong>Code:</strong> WM-001</li>
+                    <li><strong>Barcode:</strong> Enter the barcode printed on the product, if available.</li>
+                    <li><strong>Description:</strong> Add useful internal details, such as the brand, model, or specification.</li>
+                </ul>
+
+                <h3>Example: Software Development</h3>
+                <ul>
+                    <li><strong>Name:</strong> Software Development</li>
+                    <li><strong>Display Name:</strong> Software Development</li>
+                    <li><strong>Category:</strong> Select a service category, such as Software Development or Software Services.</li>
+                    <li><strong>Code:</strong> SDEV-001</li>
+                    <li><strong>Barcode:</strong> Leave blank when it does not apply.</li>
+                    <li><strong>Description:</strong> Add a note describing the service when helpful.</li>
+                </ul>
+
+                <h2>Step 5: Select the right category</h2>
+                <p>Choose the category that best matches the item. The category determines whether the item is organised as a product or service and can also carry the default tax setup configured for that category.</p>
+                <p>If the required category does not exist, click <strong>Create new category</strong>. You can also follow the item category guide before continuing.</p>
+
+                <h2>Step 6: Add a barcode and description</h2>
+                <p>Enter a barcode for physical products when you use one. Use the description for internal notes that make the item easier to identify. These fields are optional, so service items can be saved without a barcode.</p>
+
+                <h2>Step 7: Save the item</h2>
+                <p>Review the required fields, then click <strong>Save</strong>. The new item will appear in the Items list and can be selected in supported invoices and transactions.</p>
+
+                <h2>Simple checklist</h2>
+                <ul>
+                    <li>Check the Items list before creating a duplicate.</li>
+                    <li>Use a clear name and a concise display name.</li>
+                    <li>Give every item a consistent, unique code.</li>
+                    <li>Select a product or service category that matches the item.</li>
+                    <li>Add barcodes only where they apply.</li>
+                    <li>Use descriptions for useful internal notes.</li>
+                    <li>Review all required fields before saving.</li>
+                </ul>
+
+                <div class="blog-next-step">
+                    <h2>Need a category first?</h2>
+                    <p>Create product and service categories before adding items so each record is organised correctly and can use the appropriate default tax group.</p>
+                    <a href="/blogs/item-category/index.html" class="button button-secondary">Read the item category guide</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>Create items once. Reuse them across transactions.</h2>
+            <p>Try Daybook.Cloud for free. No credit card needed.</p>
+            <a href="https://app.daybook.cloud" class="button button-primary">Try for Free - No Credit Card Needed</a>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Daybook.Cloud home">
+                        <img src="/assets/logo/daybook-cloud-logo-small.svg" alt="" class="footer-logo-img" aria-hidden="true">
+                        <span>Daybook.Cloud</span>
+                    </a>
+                    <p class="footer-tagline">Simple bookkeeping and finance management for growing businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="/features.html">Features</a></li>
+                            <li><a href="/blogs/index.html">Blogs</a></li>
+                            <li><a href="/security.html">Security</a></li>
+                            <li><a href="https://app.daybook.cloud">Try for free</a></li>
+                            <li><a href="https://app.daybook.cloud">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Workflows</h4>
+                        <ul>
+                            <li><a href="/features.html#invoicing">Invoicing</a></li>
+                            <li><a href="/features.html#multi-currency">Multi-currency</a></li>
+                            <li><a href="/features.html#journals">Journals</a></li>
+                            <li><a href="/features.html#gst">GST reconciliation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daybook.Cloud. A product of Tociva Private Limited.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
