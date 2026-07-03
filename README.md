@@ -2,7 +2,7 @@
 
 Website contents for daybook.cloud.
 
-# Daybook Cloud Build System - Header/Footer Partials
+# Daybook.Cloud Build System - Header/Footer Partials
 
 This build system uses a partial-based architecture to keep the shared header and footer DRY while generating complete static HTML pages.
 
@@ -42,7 +42,7 @@ The top partial contains placeholder tokens that are replaced for each generated
 - `<!-- daybook-page-description -->` is replaced with the page `description`.
 - `<!-- daybook-page-canonical -->` is replaced with the generated canonical URL under `https://daybook.cloud/`.
 
-If a page does not specify a title or description, Daybook Cloud defaults are used.
+If a page does not specify a title or description, Daybook.Cloud defaults are used.
 
 ### 4. Generate HTML Files
 

@@ -92,10 +92,10 @@ function generateOne(filePath, topBase, bottomBase) {
 
   // If a page doesn't specify title/description, fall back to sane defaults
   const title =
-    meta.title || "Daybook Cloud - Simple Bookkeeping and Finance Management";
+    meta.title || "Daybook.Cloud - Simple Bookkeeping and Finance Management";
   const description =
     meta.description ||
-    "Daybook Cloud helps businesses manage bookkeeping, invoices, ledgers, branches, financial years, reports, and daily finance workflows.";
+    "Daybook.Cloud helps businesses manage bookkeeping, invoices, ledgers, branches, financial years, reports, and daily finance workflows.";
   const canonical = canonicalFor(outPath);
 
   const top = topBase

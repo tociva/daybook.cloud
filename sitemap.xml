@@ -13,6 +13,36 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://daybook.cloud/blogs/index.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daybook.cloud/blogs/invoicing/index.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://daybook.cloud/blogs/multi-currency/index.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://daybook.cloud/blogs/journals/index.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://daybook.cloud/blogs/gst-reconciliation/index.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://daybook.cloud/services.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
