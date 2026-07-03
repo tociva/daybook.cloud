@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create vendor records in Daybook.Cloud with country, currency, contact details, GSTIN, PAN, state, notes, and billing address.">
+    <meta name="theme-color" content="#104a7a">
+    <link rel="canonical" href="https://daybook.cloud/blogs/vendors/index.html">
+    <title>How to Create Vendors in Daybook.Cloud</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo" aria-label="Daybook.Cloud home">
+                    <svg class="logo-wordmark" width="330" height="96" viewBox="0 0 330 96" role="img" aria-labelledby="headerDaybookLogoTitle headerDaybookLogoDesc" xmlns="http://www.w3.org/2000/svg">
+                        <title id="headerDaybookLogoTitle">Daybook.Cloud</title>
+                        <desc id="headerDaybookLogoDesc">Daybook.Cloud wordmark with Dive into Simplicity tagline.</desc>
+                        <defs>
+                            <filter id="headerLogoShadow" x="-35%" y="-35%" width="170%" height="170%">
+                                <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#9b8e43" flood-opacity="0.26" />
+                            </filter>
+                        </defs>
+                        <rect x="4" y="10" width="84" height="84" rx="26" fill="#104a7a" filter="url(#headerLogoShadow)" />
+                        <text x="46" y="62" fill="#fff7cf" font-family="Lobster, Roboto, system-ui, sans-serif" font-size="37" font-weight="400" font-style="normal" text-anchor="middle">D.C</text>
+                        <text x="112" y="51" fill="#111827" font-family="Lobster, Roboto, system-ui, sans-serif" font-size="36" font-weight="400" font-style="normal">Daybook.Cloud</text>
+                        <text x="115" y="77" fill="#5f6b54" font-family="Roboto, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" font-style="normal" letter-spacing="1">DIVE INTO SIMPLICITY</text>
+                    </svg>
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </label>
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/features.html" class="nav-link">Features</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/security.html" class="nav-link">Security</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                    <a href="https://app.daybook.cloud" class="nav-link">Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!-- Page Hero -->
+    <section class="hero blog-hero">
+        <div class="container">
+            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>Vendor creation</span></nav>
+            <h1>How to create a New Vendor in Daybook.Cloud?</h1>
+            <p class="section-intro">Create complete vendor records with country, currency, contact, tax, and address details for clearer purchase and payment workflows.</p>
+            <div class="blog-meta" aria-label="Blog details">
+                <span>Author: <a href="https://www.linkedin.com/in/princekf/">Prince Francis</a></span>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/princekf/">princekf</a></span>
+                <span>Created at: <time datetime="2026-07-03T12:41:34+05:30">2026-07-03 12:41:34 IST</time></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article-section">
+        <div class="container">
+            <article class="blog-article">
+                <p>A vendor record stores the identity and billing details of a supplier from whom your business purchases products or services. Creating vendors before recording purchases helps your team use consistent names, tax details, currency, and addresses.</p>
+                <p>Daybook.Cloud supports both local and international vendors. Each vendor can have its own country and currency, so the vendor record reflects how you transact with that supplier.</p>
+
+                <h2>Before you start</h2>
+                <p>Keep these vendor details ready:</p>
+                <ul>
+                    <li><strong>Name:</strong> The vendor’s legal or commonly recognised business name.</li>
+                    <li><strong>Country:</strong> The country where the vendor is located.</li>
+                    <li><strong>Currency:</strong> The currency used for transactions with the vendor.</li>
+                    <li><strong>Contact details:</strong> Mobile number and email address.</li>
+                    <li><strong>GSTIN:</strong> The vendor’s GST registration number when applicable.</li>
+                    <li><strong>PAN:</strong> The vendor’s Permanent Account Number when applicable.</li>
+                    <li><strong>State:</strong> The vendor’s state for relevant tax and address records.</li>
+                    <li><strong>Address:</strong> The vendor’s billing or delivery address.</li>
+                    <li><strong>Description:</strong> Optional internal notes about the vendor.</li>
+                </ul>
+
+                <h2>Step 1: Open the Vendors page</h2>
+                <p>Go to <strong>Trading</strong> and select <strong>Vendor</strong> from the left menu. Click <strong>New vendor</strong> at the top right. If no vendors exist yet, you can also use the New vendor button in the centre of the page.</p>
+                <figure class="blog-figure">
+                    <img src="vendor-list.png" alt="Vendors page in Daybook.Cloud with the Vendor menu and New vendor button highlighted">
+                    <figcaption>Open Trading, select Vendor, then click New vendor.</figcaption>
+                </figure>
+
+                <h2>Step 2: Enter the vendor identity</h2>
+                <p>Enter the vendor name, then select the vendor’s <strong>Country</strong> and <strong>Currency</strong>. These required fields establish where the vendor is located and the currency in which you normally transact with that supplier.</p>
+                <figure class="blog-figure">
+                    <img src="new-vendor-identity.png" alt="New Vendor form in Daybook.Cloud showing name, country, currency, mobile, email, GSTIN, PAN, state, and description fields">
+                    <figcaption>Enter the vendor identity, transaction currency, contact details, and relevant tax information.</figcaption>
+                </figure>
+
+                <h3>Example: Sunrise Suppliers</h3>
+                <ul>
+                    <li><strong>Name:</strong> Sunrise Suppliers</li>
+                    <li><strong>Country:</strong> India</li>
+                    <li><strong>Currency:</strong> INR</li>
+                    <li><strong>Mobile:</strong> The supplier’s primary contact number.</li>
+                    <li><strong>Email:</strong> The address used for purchase and payment communication.</li>
+                    <li><strong>GSTIN and PAN:</strong> Enter the identifiers provided by the vendor.</li>
+                    <li><strong>State:</strong> Enter the vendor’s registered state.</li>
+                </ul>
+
+                <h2>Step 3: Choose the correct vendor currency</h2>
+                <p>The vendor currency should match the currency agreed for purchases and payments. For example, use INR for a local supplier invoicing in Indian Rupees, USD for a supplier billing in US Dollars, or EUR for a supplier billing in Euros.</p>
+                <p>Verify the currency before saving because it provides important financial context for transactions associated with the vendor.</p>
+
+                <h2>Step 4: Add contact information</h2>
+                <p>Enter a current mobile number and email address. Reliable vendor contact details help your purchasing and finance teams resolve order, invoice, and payment questions without searching through separate records.</p>
+
+                <h2>Step 5: Enter GSTIN, PAN, and state</h2>
+                <p>For Indian vendors, enter the GSTIN, PAN, and state when applicable. Check these values against the vendor’s official documents. Incorrect tax identifiers can create avoidable problems during purchase review and GST reconciliation.</p>
+                <p>For vendors outside India, complete only the tax fields relevant to your process and follow your accountant’s guidance.</p>
+
+                <h2>Step 6: Add internal notes</h2>
+                <p>Use the <strong>Description</strong> field for notes such as the vendor’s account manager, payment terms, product range, purchase contact, or other details your team should know.</p>
+
+                <h2>Step 7: Enter the billing or delivery address</h2>
+                <p>Complete the address using the house or building name, address lines, street, city, and ZIP or postal code. Use the address supplied by the vendor for billing or delivery records.</p>
+                <figure class="blog-figure">
+                    <img src="new-vendor-address.png" alt="Address section of the New Vendor form in Daybook.Cloud showing building, address lines, street, city, ZIP code, and Save button">
+                    <figcaption>Add the vendor’s billing or delivery address, review the record, then save.</figcaption>
+                </figure>
+
+                <h2>Step 8: Review and save the vendor</h2>
+                <p>Check the vendor name, country, currency, tax identifiers, contact details, and address. Click <strong>Save</strong> when the record is complete. The vendor will then be available for supported purchase and payment workflows.</p>
+
+                <h2>Vendor setup checklist</h2>
+                <ul>
+                    <li>Check for an existing vendor before creating a duplicate.</li>
+                    <li>Use the vendor’s recognised business name.</li>
+                    <li>Select the correct country and transaction currency.</li>
+                    <li>Verify GSTIN and PAN against official vendor records.</li>
+                    <li>Enter a current mobile number and email address.</li>
+                    <li>Add the complete billing or delivery address.</li>
+                    <li>Review all details before saving.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>Keep every vendor ready for purchasing and payments.</h2>
+            <p>Try Daybook.Cloud for free. No credit card needed.</p>
+            <a href="https://app.daybook.cloud" class="button button-primary">Try for Free - No Credit Card Needed</a>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Daybook.Cloud home">
+                        <img src="/assets/logo/daybook-cloud-logo-small.svg" alt="" class="footer-logo-img" aria-hidden="true">
+                        <span>Daybook.Cloud</span>
+                    </a>
+                    <p class="footer-tagline">Simple bookkeeping and finance management for growing businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="/features.html">Features</a></li>
+                            <li><a href="/blogs/index.html">Blogs</a></li>
+                            <li><a href="/security.html">Security</a></li>
+                            <li><a href="https://app.daybook.cloud">Try for free</a></li>
+                            <li><a href="https://app.daybook.cloud">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Workflows</h4>
+                        <ul>
+                            <li><a href="/features.html#invoicing">Invoicing</a></li>
+                            <li><a href="/features.html#multi-currency">Multi-currency</a></li>
+                            <li><a href="/features.html#journals">Journals</a></li>
+                            <li><a href="/features.html#gst">GST reconciliation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daybook.Cloud. A product of Tociva Private Limited.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
