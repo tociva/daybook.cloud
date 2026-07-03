@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn how Daybook.Cloud helps businesses create custom invoices, manage customer billing records, and keep invoice workflows organized.">
+    <meta name="description" content="A detailed guide to creating sale invoices in Daybook.Cloud with foreign currencies, GST tax options, automatic numbering, billing and shipping addresses, discounts, items, and attachments.">
     <meta name="theme-color" content="#104a7a">
     <link rel="canonical" href="https://daybook.cloud/blogs/invoicing/index.html">
-    <title>Daybook.Cloud Invoicing Guide - Custom Templates and Customer Billing</title>
+    <title>How to Create a Sale Invoice in Daybook.Cloud | Multi-Currency & GST Guide</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,44 +52,219 @@
 <!-- Page Hero -->
     <section class="hero blog-hero">
         <div class="container">
-            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>Invoicing</span></nav>
-            <h1>Invoicing with Daybook.Cloud</h1>
-            <p class="section-intro">Create invoices that fit your brand, keep customer billing records organized, and connect invoice work to bookkeeping.</p>
+            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>Sale invoice creation</span></nav>
+            <h1>How to create a Sale Invoice in Daybook.Cloud?</h1>
+            <p class="section-intro">A complete guide to customer selection, foreign-currency billing, GST tax options, automatic numbering, addresses, line items, discounts, attachments, and final invoice review.</p>
             <div class="blog-meta" aria-label="Blog details">
                 <span>Author: <a href="https://www.linkedin.com/in/princekf/">Prince Francis</a></span>
                 <span>LinkedIn: <a href="https://www.linkedin.com/in/princekf/">princekf</a></span>
-                <span>Created at: <time datetime="2026-07-03T12:41:34+05:30">2026-07-03 12:41:34 IST</time></span>
+                <span>Created at: <time datetime="2026-07-03T17:30:00+05:30">2026-07-03 17:30:00 IST</time></span>
             </div>
         </div>
     </section>
 
-    <section class="products-section">
+    <section class="blog-article-section">
         <div class="container">
-            <h2 class="section-title">Tailor your invoices to the work you do</h2>
-            <p class="section-intro">Daybook.Cloud keeps invoice creation practical for teams that need branded documents and reliable finance records.</p>
-            <div class="products-grid">
-                <div class="product-card">
-                    <h3>Custom invoice templates</h3>
-                    <p class="card-subtitle">Represent your business clearly.</p>
-                    <p class="card-description">Choose invoice layouts that match your business style and present billing details in a professional format.</p>
+            <article class="blog-article">
+                <p>A sale invoice records what you supplied to a customer, how much the customer owes, which taxes apply, when payment is due, and the currency in which payment is expected. Daybook.Cloud brings these decisions into one invoice form so local and international sales can follow the same controlled workflow.</p>
+                <p><strong>Foreign-currency invoicing is especially important.</strong> If a customer agreed to pay in US Dollars, Euros, Pounds Sterling, or another currency, the invoice must be created in that transaction currency—not simply in your company’s home currency. The currency symbol, item prices, tax amounts, and grand total should all be reviewed in the selected invoice currency before the invoice is created.</p>
+
+                <h2>What you can control on a sale invoice</h2>
+                <ul>
+                    <li><strong>Customer:</strong> Search for an existing customer or create a new one without leaving the workflow.</li>
+                    <li><strong>Billing and shipping addresses:</strong> Review the addresses loaded for the selected customer and change either address when this sale uses a different location.</li>
+                    <li><strong>Invoice number:</strong> Use automatic numbering for a consistent sequence or turn it off to enter an approved number manually.</li>
+                    <li><strong>Invoice and due dates:</strong> Record when the invoice is issued and when payment becomes due.</li>
+                    <li><strong>Tax option:</strong> Choose the correct treatment for an intra-state, inter-state, export, or non-taxable transaction, according to your configured tax groups.</li>
+                    <li><strong>Delivery state:</strong> Enter the place-of-supply or delivery state used by your tax process.</li>
+                    <li><strong>Currency:</strong> Create the invoice in the customer’s agreed transaction currency.</li>
+                    <li><strong>Line-item detail:</strong> Add items, quantities, prices, optional discounts, descriptions, display names, and additional rows.</li>
+                    <li><strong>Supporting files:</strong> Attach purchase orders, contracts, delivery records, or other relevant documents.</li>
+                </ul>
+
+                <h2>Before you create the invoice</h2>
+                <p>Collect the following information first. A short review at this stage prevents the most expensive invoice corrections later.</p>
+                <ul>
+                    <li>The correct legal customer record and billing contact.</li>
+                    <li>The customer’s billing address and the actual shipping or delivery address.</li>
+                    <li>The purchase order, contract, or customer reference, if applicable.</li>
+                    <li>The agreed invoice currency and item prices in that currency.</li>
+                    <li>The supply date, invoice date, payment terms, and due date.</li>
+                    <li>The correct tax option and delivery state.</li>
+                    <li>Products or services, quantities, rates, discounts, and descriptions.</li>
+                    <li>Any supporting documents that should remain with the transaction.</li>
+                </ul>
+                <p>If you are invoicing a foreign customer for the first time, confirm the customer’s country and currency in the customer record before starting. See the <a href="/blogs/customers/index.html">customer creation and multi-currency guide</a> for that setup.</p>
+
+                <h2>Step 1: Open Sale Invoice and start a new invoice</h2>
+                <p>Go to <strong>Trading</strong> in the left navigation and select <strong>Sale Invoice</strong>. The Sale Invoices page contains your invoice list and invoice actions. Click <strong>New Invoice</strong> at the top right. If the company has no sale invoices yet, you can also click <strong>New sale invoice</strong> in the centre of the page.</p>
+                <figure class="blog-figure">
+                    <img src="open-sale-invoices.png" alt="Sale Invoices page in Daybook.Cloud with the Sale Invoice menu and New Invoice button highlighted" loading="lazy" decoding="async">
+                    <figcaption>Open Trading &gt; Sale Invoice, then click New Invoice.</figcaption>
+                </figure>
+
+                <h2>Step 2: Select the customer</h2>
+                <p>Use the <strong>Customer</strong> search field to find the customer by name, mobile number, or email address. Select the exact customer record that should appear on the invoice. If the customer does not exist, click <strong>Create new Customer</strong>, add the customer details, and then return to the invoice.</p>
+                <p>Do not select a similarly named customer without checking the identity, tax registration, country, and currency. The selected customer provides essential billing context for the transaction.</p>
+
+                <h2>Step 3: Review or change the billing and shipping addresses</h2>
+                <p>After selecting the customer, review the address information used for the invoice. The <strong>billing address</strong> identifies where the invoice is addressed; the <strong>shipping address</strong> identifies where goods or services are delivered. They can be the same, but they do not have to be.</p>
+                <ul>
+                    <li>Use the registered or accounts-payable location as the billing address when required by the customer.</li>
+                    <li>Use the branch, warehouse, project site, or other actual destination as the shipping address.</li>
+                    <li>If this transaction uses a different saved address, change the selected billing or shipping address before creating the invoice.</li>
+                    <li>If the required address is missing or incorrect, update the customer’s address details first, then reselect the correct address on the invoice.</li>
+                    <li>Recheck the delivery state after changing the shipping address because it can affect the tax option.</li>
+                </ul>
+                <p>This review is important for both domestic GST treatment and exports. An invoice can contain the right customer name but still be wrong if it uses the wrong branch, state, country, or delivery destination.</p>
+
+                <h2>Step 4: Choose automatic or manual invoice numbering</h2>
+                <p>The <strong>Auto numbering</strong> switch appears in Invoice Details. Keep it enabled when Daybook.Cloud should assign the next number in your configured sequence. This is the preferred everyday workflow because it reduces duplicate numbers and keeps the series consistent.</p>
+                <p>Turn Auto numbering off only when your process requires a specific invoice number, such as during an approved migration or when continuing an existing sequence. A <strong>Number</strong> field then appears so you can enter the value manually.</p>
+                <figure class="blog-figure">
+                    <img src="manual-number-and-inter-state-tax.png" alt="New Sale Invoice form in Daybook.Cloud with auto numbering disabled, a manual Number field, Inter State tax option, delivery state, and currency" loading="lazy" decoding="async">
+                    <figcaption>Disable Auto numbering only when you need to enter an approved invoice number manually.</figcaption>
+                </figure>
+                <p>Before using a manual number, verify that it is unique and follows your company’s numbering and statutory requirements. Do not change numbering merely to make an invoice easier to recognise; use customer references, descriptions, or attachments for additional context.</p>
+
+                <h2>Step 5: Set the invoice date and due date</h2>
+                <p>Select the required <strong>Date</strong> and <strong>Due Date</strong> in the Invoice Details panel.</p>
+                <ul>
+                    <li><strong>Date:</strong> The issue date of the sale invoice.</li>
+                    <li><strong>Due Date:</strong> The deadline by which the customer should pay.</li>
+                </ul>
+                <p>The due date should reflect the agreed payment terms—for example, immediate payment, 15 days, 30 days, or a contract-specific date. Review both dates carefully when entering a historical transaction or preparing an invoice in advance.</p>
+
+                <h2>Step 6: Select the correct tax option</h2>
+                <p>The <strong>Tax Option</strong> determines which configured tax-group mode is used for the invoice. The correct choice depends on the supplier location, place of supply, customer details, and nature of the transaction. Tax treatment should be confirmed with your accountant or tax adviser.</p>
+
+                <h3>Intra State</h3>
+                <p>Choose <strong>Intra State</strong> when the transaction should use the intra-state mode. For a typical Indian GST configuration, an 18% tax group may apply CGST 9% plus SGST 9%. The item table exposes separate CGST and SGST columns so you can review the split and amounts.</p>
+                <figure class="blog-figure">
+                    <img src="new-sale-invoice.png" alt="New Sale Invoice form in Daybook.Cloud showing automatic numbering, dates, Intra State tax option, delivery state, currency, item rows, CGST, SGST, totals, and Create Invoice button" loading="lazy" decoding="async">
+                    <figcaption>The default invoice workspace with Auto numbering, Intra State tax, currency, item rows, and totals.</figcaption>
+                </figure>
+
+                <h3>Inter State</h3>
+                <p>Choose <strong>Inter State</strong> when the transaction should use the inter-state mode. With a typical Indian GST setup, the configured tax group applies IGST rather than a CGST and SGST split. Notice how the item table changes to show the tax columns relevant to the selected option.</p>
+
+                <h3>Export or other configured tax modes</h3>
+                <p>For an international sale, use the export mode or other tax treatment configured for your business. An export may be zero-rated or may require another treatment based on your registration, documentation, and applicable law. Selecting a foreign currency does <strong>not</strong> automatically decide the tax treatment; currency and tax option are separate controls.</p>
+
+                <h3>Non-taxable transactions</h3>
+                <p>Use a non-taxable mode only when the supply is genuinely treated that way and your tax configuration supports it. A 0% tax, an export, and a non-taxable supply can have different accounting or reporting meanings even if each produces no tax amount on the invoice.</p>
+
+                <p>If the required option does not apply the expected taxes, review your individual taxes and tax-group mappings before creating the invoice. The <a href="/blogs/tax-configuration/index.html">tax configuration guide</a> and <a href="/blogs/tax-groups/index.html">tax groups guide</a> explain that setup.</p>
+
+                <h2>Step 7: Enter the delivery state</h2>
+                <p>Use <strong>Delivery State</strong> to record the destination or place-of-supply state required by your process. Compare it with the shipping address and selected tax option. If the delivery state changes, reassess whether the invoice should be Intra State or Inter State before proceeding.</p>
+
+                <h2>Step 8: Select the invoice currency—especially for foreign customers</h2>
+                <p>The <strong>Currency</strong> field is a required invoice control. Indian Rupee (₹) may be displayed by default, but it should not be accepted automatically for every customer. Open the currency list and select the currency agreed with the customer.</p>
+
+                <h3>Why the invoice currency matters</h3>
+                <ul>
+                    <li>Every item price is interpreted in the selected currency.</li>
+                    <li>Discounts, taxable amounts, tax amounts, round-off, and the grand total are presented in that currency.</li>
+                    <li>The customer can match the invoice to the contract, purchase order, and expected payment currency.</li>
+                    <li>Your finance team can distinguish the transaction currency from the company’s home or reporting currency.</li>
+                </ul>
+
+                <h3>Foreign-currency example</h3>
+                <p>Assume an Indian company invoices a US customer for consulting services:</p>
+                <ul>
+                    <li><strong>Customer:</strong> Select the US customer record.</li>
+                    <li><strong>Currency:</strong> Select US Dollar (USD) if the contract is priced in USD.</li>
+                    <li><strong>Price:</strong> Enter the agreed dollar rate—such as 1,500.00 USD—not an INR conversion.</li>
+                    <li><strong>Tax option:</strong> Select the export or other approved tax mode separately.</li>
+                    <li><strong>Addresses:</strong> Verify the international billing and shipping addresses, including country and postal code.</li>
+                    <li><strong>Review:</strong> Confirm that the totals display the intended currency before clicking Create Invoice.</li>
+                </ul>
+
+                <h3>Foreign-currency control checklist</h3>
+                <ul>
+                    <li>Use the currency stated in the signed contract or purchase order.</li>
+                    <li>Do not type converted home-currency prices into an invoice set to a foreign currency.</li>
+                    <li>Do not assume the customer’s country always determines the billing currency; use the commercial agreement.</li>
+                    <li>Confirm how exchange rates and local-currency accounting are handled in your finance process.</li>
+                    <li>Keep evidence of the agreed currency and pricing as an attachment when useful.</li>
+                    <li>Check the currency symbol and grand total during final review.</li>
+                </ul>
+
+                <h2>Step 9: Add products or services</h2>
+                <p>In the first row, click <strong>Search item</strong> and choose the product or service being sold. Enter the quantity and price, then review the calculated item total and taxes. Click <strong>Add Row</strong> for every additional item.</p>
+                <p>Use <strong>Show Display Name</strong> when the customer-facing name should differ from the internal item name. This adds a Display Name column to the invoice table. Use <strong>Show Description</strong> when line-level detail, scope, period, specification, or delivery information should accompany an item.</p>
+
+                <h2>Step 10: Apply discounts carefully</h2>
+                <p>Enable <strong>Show Discount</strong> to add discount fields to the item table. The table then shows the discount percentage, discount amount, taxable amount, and updated totals.</p>
+                <figure class="blog-figure">
+                    <img src="sale-invoice-with-discount.png" alt="New Sale Invoice form in Daybook.Cloud with Show Discount enabled and discount, taxable amount, CGST, SGST, and summary columns visible" loading="lazy" decoding="async">
+                    <figcaption>Enable Show Discount to record and review item-level discounts before tax and grand-total calculations.</figcaption>
+                </figure>
+                <p>Confirm whether the commercial agreement expresses the discount as a percentage or a fixed value, then review the taxable amount after the discount. The invoice summary adds a Discount Total when discounting is enabled.</p>
+
+                <h2>Step 11: Attach supporting documents</h2>
+                <p>Click <strong>Attach Documents</strong> to keep relevant evidence with the invoice. Depending on your workflow, useful documents can include:</p>
+                <ul>
+                    <li>Customer purchase order or work order.</li>
+                    <li>Signed quotation, contract, or statement of work.</li>
+                    <li>Delivery note, timesheet, acceptance record, or milestone approval.</li>
+                    <li>Foreign-currency pricing confirmation or another supporting reference.</li>
+                </ul>
+                <p>Attach only appropriate business documents and avoid unnecessary personal or confidential information.</p>
+
+                <h2>Step 12: Review the invoice totals</h2>
+                <p>Before creating the invoice, reconcile the line items with the summary:</p>
+                <ul>
+                    <li><strong>Item Total:</strong> Total before the displayed discount and taxes.</li>
+                    <li><strong>Discount Total:</strong> Combined discount when discounts are enabled.</li>
+                    <li><strong>Tax Total:</strong> Combined tax calculated from the selected tax mode and item tax groups.</li>
+                    <li><strong>Round Off:</strong> Any rounding adjustment.</li>
+                    <li><strong>Grand Total:</strong> The final amount the customer owes in the selected invoice currency.</li>
+                </ul>
+                <p>For a foreign-currency invoice, pause at the Grand Total and confirm the currency one final time. A numerically correct total in the wrong currency is still a materially incorrect invoice.</p>
+
+                <h2>Step 13: Create the invoice</h2>
+                <p>Click <strong>Create Invoice</strong> only after completing the final review. If information is incomplete or you are not ready to proceed, click <strong>Cancel</strong> and correct the underlying customer, item, tax, or address setup first.</p>
+
+                <h2>Final sale-invoice checklist</h2>
+                <ul>
+                    <li>The correct customer record is selected.</li>
+                    <li>Billing and shipping addresses match this transaction.</li>
+                    <li>The invoice number is automatic, or the manual number is authorised and unique.</li>
+                    <li>The invoice date and due date match the agreed terms.</li>
+                    <li>The tax option matches the transaction and delivery state.</li>
+                    <li>The required currency—not merely the default currency—is selected.</li>
+                    <li>Every price and discount is entered in the selected invoice currency.</li>
+                    <li>Items, quantities, display names, and descriptions are complete.</li>
+                    <li>Taxable amounts and tax columns look correct.</li>
+                    <li>Supporting documents are attached where needed.</li>
+                    <li>The Grand Total and currency symbol have been checked together.</li>
+                </ul>
+
+                <h2>Common mistakes to avoid</h2>
+                <ul>
+                    <li><strong>Leaving INR selected for an overseas contract priced in USD or EUR.</strong></li>
+                    <li><strong>Converting prices to INR while the invoice is still set to USD.</strong></li>
+                    <li><strong>Choosing Inter State merely because the invoice uses a foreign currency.</strong> Tax option depends on tax treatment, not currency alone.</li>
+                    <li><strong>Using the billing address as the shipping address without checking the actual destination.</strong></li>
+                    <li><strong>Changing the delivery state but forgetting to reassess the tax option.</strong></li>
+                    <li><strong>Turning off automatic numbering without checking for duplicate numbers.</strong></li>
+                    <li><strong>Creating the invoice before reviewing discounts, tax totals, and the final currency symbol.</strong></li>
+                </ul>
+
+                <div class="blog-next-step">
+                    <h2>Build the supporting setup first</h2>
+                    <p>A reliable invoice depends on accurate customers, currencies, items, taxes, and tax groups. Review those records before issuing the first live invoice in a new currency or tax mode.</p>
+                    <a href="/blogs/customers/index.html" class="button button-secondary">Set up multi-currency customers</a>
                 </div>
-                <div class="product-card">
-                    <h3>Customer billing records</h3>
-                    <p class="card-subtitle">Keep invoice context close.</p>
-                    <p class="card-description">Prepare invoices while keeping customer activity, ledgers, and finance records easier to track together.</p>
-                </div>
-                <div class="product-card">
-                    <h3>Bookkeeping connection</h3>
-                    <p class="card-subtitle">Reduce disconnected work.</p>
-                    <p class="card-description">Use invoice activity as part of a broader bookkeeping workflow instead of managing billing in isolation.</p>
-                </div>
-            </div>
+            </article>
         </div>
     </section>
 
     <section class="final-cta-section">
         <div class="container">
-            <h2>Start with better invoices.</h2>
+            <h2>Create local and foreign-currency sale invoices with confidence.</h2>
             <p>Try Daybook.Cloud for free. No credit card needed.</p>
             <a href="https://app.daybook.cloud" class="button button-primary">Try for Free - No Credit Card Needed</a>
         </div>

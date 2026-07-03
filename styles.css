@@ -624,7 +624,8 @@ a:hover {
     color: var(--brand);
 }
 
-.blog-article ul {
+.blog-article ul,
+.blog-article ol {
     margin: 0 0 var(--spacing-lg) 1.25rem;
 }
 
