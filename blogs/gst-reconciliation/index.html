@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn how Daybook.Cloud supports GST reconciliation workflows with organized finance records, reports, and review steps.">
+    <meta name="description" content="Learn how to reconcile GSTR-1 in Daybook.Cloud by downloading the GSTR-1 JSON from the GST portal, uploading or dragging it into the grid, reviewing the detected data, and confirming the import.">
     <meta name="theme-color" content="#104a7a">
     <link rel="canonical" href="https://daybook.cloud/blogs/gst-reconciliation/index.html">
-    <title>Daybook.Cloud GST Reconciliation Guide - Review GST Activity with Structure</title>
+    <title>GSTR-1 Reconciliation in Daybook.Cloud - Import GST Portal JSON</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,44 +52,94 @@
 <!-- Page Hero -->
     <section class="hero blog-hero">
         <div class="container">
-            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>GST reconciliation</span></nav>
-            <h1>GST reconciliation workflows</h1>
-            <p class="section-intro">Review GST activity alongside ledgers, invoices, journals, branches, financial years, and reports.</p>
+            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>GSTR-1 reconciliation</span></nav>
+            <h1>GSTR-1 reconciliation against book sale invoices</h1>
+            <p class="section-intro">Import the GST portal GSTR-1 JSON into Daybook.Cloud, review the detected sales return data, and compare it with your book sale invoices.</p>
             <div class="blog-meta" aria-label="Blog details">
                 <span>Author: <a href="https://www.linkedin.com/in/princekf/">Prince Francis</a></span>
                 <span>LinkedIn: <a href="https://www.linkedin.com/in/princekf/">princekf</a></span>
-                <span>Created at: <time datetime="2026-07-03T12:41:34+05:30">2026-07-03 12:41:34 IST</time></span>
+                <span>Created at: <time datetime="2026-07-07T13:51:00+05:30">2026-07-07 13:51:00 IST</time></span>
             </div>
         </div>
     </section>
 
-    <section class="products-section">
+    <section class="blog-article-section">
         <div class="container">
-            <h2 class="section-title">Bring GST review closer to finance activity</h2>
-            <p class="section-intro">Daybook.Cloud helps teams organize the records they need before tax review and reporting work.</p>
-            <div class="products-grid">
-                <div class="product-card">
-                    <h3>GST reconciliation workflow</h3>
-                    <p class="card-subtitle">Review tax-related activity clearly.</p>
-                    <p class="card-description">Use structured finance records to support GST reconciliation and identify items that need attention.</p>
+            <article class="blog-article">
+                <p>GSTR-1 reconciliation helps you compare the outward supplies reported on the GST portal with the sale invoices maintained in your books. In Daybook.Cloud, the GSTR-1 workflow starts by importing the JSON file downloaded from the GST portal.</p>
+                <p><strong>GSTR-1 is the sales-side reconciliation file.</strong> Use it to reconcile portal GSTR-1 against book sale invoices. GSTR-2B is a separate purchase-side workflow used for portal GSTR-2B against book purchase invoices.</p>
+
+                <h2>Before you start</h2>
+                <p>Keep these details ready before importing the file:</p>
+                <ul>
+                    <li>The company and financial year you want to review in Daybook.Cloud.</li>
+                    <li>The correct GSTIN for the business or branch.</li>
+                    <li>The return period, such as March 2026.</li>
+                    <li>The GSTR-1 JSON file downloaded from the GST portal for that period.</li>
+                    <li>The sale invoices already recorded in Daybook.Cloud for the same period.</li>
+                </ul>
+                <p>Download the GSTR-1 JSON from the GST portal using the official return download option for the selected GSTIN, financial year, and tax period. GST portal screens can change, so always follow the current portal labels and confirm that the downloaded file belongs to the period you are reconciling.</p>
+
+                <h2>Step 1: Open GST Reconciliation</h2>
+                <p>In Daybook.Cloud, open <strong>Trading</strong> from the left navigation and select <strong>GST Reconciliation</strong>. The page shows separate cards for GSTR-2B and GSTR-1. Use the <strong>GSTR-1</strong> card when you are working with sales return data from the GST portal.</p>
+                <figure class="blog-figure">
+                    <img src="gstr-reconciliation-dashboard.png" alt="GST Reconciliation page in Daybook.Cloud with the GST Reconciliation menu and GSTR-1 Import button highlighted" loading="lazy" decoding="async">
+                    <figcaption>Open Trading &gt; GST Reconciliation, then use the GSTR-1 Import action for sales-side reconciliation.</figcaption>
+                </figure>
+
+                <h2>Step 2: Import the GSTR-1 JSON</h2>
+                <p>Click <strong>Import</strong> on the GSTR-1 card and select the JSON file downloaded from the GST portal. Daybook.Cloud reads the file and opens a review screen before anything is imported into the reconciliation grid.</p>
+                <p>You can also drag and drop the GSTR-1 JSON directly into the GSTR-1 grid section. This is useful when the file is already visible in Finder or your downloads folder and you want to place it straight into the relevant reconciliation area.</p>
+
+                <h2>Step 3: Review the detected GSTR-1 file</h2>
+                <p>The review screen confirms the detected return type and summarizes the file before import. Check the file name, period, GSTIN, invoice count, invoice value, taxable value, and total tax. If the GSTIN or period does not match your intended reconciliation month, cancel the import and choose the correct file.</p>
+                <figure class="blog-figure">
+                    <img src="gstr1-review-confirm.png" alt="Review and Confirm modal for GSTR-1 JSON import showing period, GSTIN, invoices, invoice value, taxable value, total tax, and invoice rows" loading="lazy" decoding="async">
+                    <figcaption>Review the detected GSTR-1 file details before confirming the import.</figcaption>
+                </figure>
+                <p>The invoice preview helps you catch obvious file selection mistakes. For example, a March file should show the March return period and invoice rows from that reporting period. Totals should be checked against the GST portal download and your internal tax review process.</p>
+
+                <h2>Step 4: Confirm the import</h2>
+                <p>When the review details are correct, click <strong>Import GSTR-1</strong>. Daybook.Cloud imports the portal data into the GSTR-1 reconciliation section for the detected period.</p>
+                <p>After import, the period tile updates with the imported invoice count, matching status, and value. A period with differences can show a <strong>No match</strong> count so your team knows where review is still required.</p>
+                <figure class="blog-figure">
+                    <img src="gstr1-imported-status.png" alt="GSTR-1 reconciliation grid after import showing March 2026 with GST invoice count, no match count, and imported invoice value" loading="lazy" decoding="async">
+                    <figcaption>The imported period tile shows the portal GSTR-1 count, mismatch status, and value for review.</figcaption>
+                </figure>
+
+                <h2>Step 5: Reconcile against book sale invoices</h2>
+                <p>Use the updated period tile to continue reviewing GSTR-1 against the sale invoices recorded in Daybook.Cloud. The purpose is to identify which portal invoices match your books and which invoices need attention before filing, correction, or internal review.</p>
+                <ul>
+                    <li><strong>Matched:</strong> Portal GSTR-1 data and book sale invoice details align.</li>
+                    <li><strong>No match:</strong> A portal invoice needs review against the book sale invoice list.</li>
+                    <li><strong>Pending:</strong> Periods or invoices still need reconciliation work.</li>
+                    <li><strong>Partial match:</strong> Some fields may align while totals, tax, date, or invoice details still need checking.</li>
+                </ul>
+                <p>Use the status counts as review signals, not as tax advice. Confirm final GST filing decisions with your accountant or tax adviser.</p>
+
+                <h2>GSTR-1 import checklist</h2>
+                <ul>
+                    <li>Download the GSTR-1 JSON for the correct GSTIN, financial year, and return period.</li>
+                    <li>Open Trading &gt; GST Reconciliation in Daybook.Cloud.</li>
+                    <li>Use the GSTR-1 Import button or drag and drop the file into the GSTR-1 grid section.</li>
+                    <li>Review the detected period, GSTIN, invoice count, values, and invoice rows.</li>
+                    <li>Click Import GSTR-1 only after confirming the file is correct.</li>
+                    <li>Review the imported period tile for count, value, and match status.</li>
+                    <li>Continue reconciliation against book sale invoices.</li>
+                </ul>
+
+                <div class="blog-next-step">
+                    <h2>Next step: Review sale invoices</h2>
+                    <p>GSTR-1 reconciliation works best when your sale invoices are complete and recorded in the right period before importing portal data.</p>
+                    <a href="/blogs/invoicing/index.html" class="button button-secondary">Read the sale invoice guide</a>
                 </div>
-                <div class="product-card">
-                    <h3>Reports and ledgers</h3>
-                    <p class="card-subtitle">Work from organized records.</p>
-                    <p class="card-description">Review ledgers, invoices, journals, branches, financial years, and reports from one bookkeeping setup.</p>
-                </div>
-                <div class="product-card">
-                    <h3>AI-assisted review</h3>
-                    <p class="card-subtitle">Reduce manual checking.</p>
-                    <p class="card-description">Use AI-assisted reconciliation support to review GST and bank activity faster.</p>
-                </div>
-            </div>
+            </article>
         </div>
     </section>
 
     <section class="final-cta-section">
         <div class="container">
-            <h2>Simplify GST review.</h2>
+            <h2>Reconcile GSTR-1 with your sale invoices.</h2>
             <p>Try Daybook.Cloud for free. No credit card needed.</p>
             <a href="https://app.daybook.cloud" class="button button-primary">Try for Free - No Credit Card Needed</a>
         </div>
@@ -111,6 +161,7 @@
                         <ul>
                             <li><a href="/features.html">Features</a></li>
                             <li><a href="/blogs/index.html">Blogs</a></li>
+                            <li><a href="/announcements/index.html">Announcements</a></li>
                             <li><a href="/security.html">Security</a></li>
                             <li><a href="https://app.daybook.cloud">Try for free</a></li>
                             <li><a href="https://app.daybook.cloud">Login</a></li>
