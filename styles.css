@@ -242,10 +242,22 @@ a:hover {
 .button-primary {
     background-color: var(--brand);
     color: var(--inverse);
+    border-color: var(--brand);
+    box-shadow: 0 12px 28px rgba(16, 74, 122, 0.18);
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-primary:focus-visible {
     background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    color: var(--inverse);
+    box-shadow: 0 16px 34px rgba(16, 74, 122, 0.28);
+    transform: translateY(-1px);
+}
+
+.button-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 18px rgba(16, 74, 122, 0.2);
 }
 
 .button-secondary {
@@ -254,8 +266,11 @@ a:hover {
     border-color: var(--brand);
 }
 
-.button-secondary:hover {
+.button-secondary:hover,
+.button-secondary:focus-visible {
     background-color: var(--surface-soft);
+    color: var(--brand-dark);
+    border-color: var(--brand-dark);
 }
 
 /* Hero Section */
@@ -362,11 +377,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     min-height: 360px;
-    padding: var(--spacing-md);
-    border: 1px solid rgba(23, 74, 120, 0.24);
-    border-radius: 1rem;
-    background: var(--surface);
-    box-shadow: 0 30px 80px rgba(17, 24, 39, 0.12);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
 .story-hero-media img {
@@ -374,7 +389,9 @@ a:hover {
     width: 100%;
     max-height: 460px;
     object-fit: contain;
-    border-radius: 0.75rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .story-hero .hero-buttons {
@@ -397,14 +414,21 @@ a:hover {
         linear-gradient(180deg, var(--surface) 0%, var(--bg) 42%, var(--surface-soft) 100%);
 }
 
+
 .story-panel {
     display: grid;
     grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+    grid-auto-rows: auto;
     gap: var(--spacing-2xl);
     align-items: center;
     min-height: 460px;
     padding: var(--spacing-2xl) 0;
     border-bottom: 1px solid var(--border);
+}
+
+.story-panel .story-copy,
+.story-panel .story-media {
+    align-self: center;
 }
 
 .story-panel:last-child {
@@ -417,6 +441,13 @@ a:hover {
 
 .story-panel-reverse .story-media {
     order: 1;
+}
+
+.story-more-row {
+    grid-column: 1 / -1;
+    order: 3;
+    width: 100%;
+    margin-top: calc(var(--spacing-lg) * -0.35);
 }
 
 .story-copy {
@@ -454,13 +485,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     min-height: 360px;
-    border: 1px solid rgba(23, 74, 120, 0.24);
-    border-radius: 1rem;
-    background:
-        linear-gradient(135deg, rgba(16, 74, 122, 0.18), rgba(15, 123, 53, 0.1)),
-        linear-gradient(180deg, #fff7cf, #f8efc4);
-    box-shadow: 0 30px 80px rgba(17, 24, 39, 0.12);
-    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
 }
 
 .story-media::before {
@@ -498,8 +527,8 @@ a:hover {
 }
 
 .story-media-image {
-    padding: var(--spacing-md);
-    background: var(--surface);
+    padding: 0;
+    background: transparent;
 }
 
 .story-media-image::before,
@@ -510,10 +539,12 @@ a:hover {
 .story-media-image img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     max-height: 430px;
     object-fit: contain;
-    border-radius: 0.75rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .story-panel-final {
@@ -555,6 +586,62 @@ a:hover {
     font-size: 1.1rem;
     color: var(--text);
     line-height: 1.8;
+}
+
+/* Expandable storyboard explanations */
+.story-brief {
+    margin-top: -0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.story-more {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.story-more summary {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--brand);
+    list-style: none;
+}
+
+.story-more summary::-webkit-details-marker {
+    display: none;
+}
+
+.story-more summary::after {
+    content: "+";
+    font-weight: 800;
+}
+
+.story-more[open] summary::after {
+    content: "−";
+}
+
+.story-more p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Blog Article */
@@ -1206,8 +1293,26 @@ a:hover {
         order: initial;
     }
 
+    .story-more-row {
+        grid-column: 1 / -1;
+        order: 3;
+        width: 100%;
+        margin-top: calc(var(--spacing-lg) * -0.7);
+    }
+
     .story-copy h2 {
         font-size: 2rem;
+    }
+
+    .story-brief {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .story-more,
+    .story-more p {
+        font-size: 0.94rem;
+        line-height: 1.6;
     }
 
     .story-media {
@@ -1489,6 +1594,25 @@ a:hover {
         width: fit-content;
     }
 
+    .story-brief {
+        margin-top: -0.35rem;
+        margin-bottom: 0.65rem;
+        font-size: 0.94rem;
+        line-height: 1.55;
+    }
+
+    .story-more {
+        padding: 0;
+        font-size: 0.92rem;
+        line-height: 1.55;
+    }
+
+    .story-more p {
+        margin-top: 0.45rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
     /* Sections */
     .section-title {
         font-size: 1.35rem;
@@ -1653,7 +1777,7 @@ a:hover {
     textarea:focus {
         outline: none;
         border-color: var(--brand);
-        box-shadow: 0 0 0 3px rgba(177, 18, 38, 0.1);
+        box-shadow: 0 0 0 3px rgba(16, 74, 122, 0.14);
     }
 }
 
