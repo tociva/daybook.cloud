@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create the next fiscal year in Daybook.Cloud, choose a capital ledger, transfer closing balances, and verify the new financial year before posting transactions.">
+    <meta name="theme-color" content="#104a7a">
+    <link rel="canonical" href="https://daybook.cloud/blogs/fiscal-year-rollover/index.html">
+    <title>Create Next Financial Year and Transfer Balances in Daybook.Cloud</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo" aria-label="Daybook.Cloud home">
+                    <svg class="logo-wordmark" width="330" height="96" viewBox="0 0 330 96" role="img" aria-labelledby="headerDaybookLogoTitle headerDaybookLogoDesc" xmlns="http://www.w3.org/2000/svg">
+                        <title id="headerDaybookLogoTitle">Daybook.Cloud</title>
+                        <desc id="headerDaybookLogoDesc">Daybook.Cloud wordmark with Dive into Simplicity tagline.</desc>
+                        <defs>
+                            <filter id="headerLogoShadow" x="-35%" y="-35%" width="170%" height="170%">
+                                <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#9b8e43" flood-opacity="0.26" />
+                            </filter>
+                        </defs>
+                        <rect x="4" y="10" width="84" height="84" rx="26" fill="#104a7a" filter="url(#headerLogoShadow)" />
+                        <text x="46" y="62" fill="#fff7cf" font-family="Lobster, Roboto, system-ui, sans-serif" font-size="37" font-weight="400" font-style="normal" text-anchor="middle">D.C</text>
+                        <text x="112" y="51" fill="#111827" font-family="Lobster, Roboto, system-ui, sans-serif" font-size="36" font-weight="400" font-style="normal">Daybook.Cloud</text>
+                        <text x="115" y="77" fill="#5f6b54" font-family="Roboto, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="700" font-style="normal" letter-spacing="1">DIVE INTO SIMPLICITY</text>
+                    </svg>
+                </a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </label>
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/features.html" class="nav-link">Features</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/security.html" class="nav-link">Security</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                    <a href="https://app.daybook.cloud" class="nav-link">Login</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!-- Page Hero -->
+    <section class="hero blog-hero">
+        <div class="container">
+            <nav class="blog-breadcrumb" aria-label="Breadcrumb"><a href="/blogs/index.html">Blogs</a><span>Fiscal year rollover</span></nav>
+            <h1>How to create the next financial year and transfer balances in Daybook.Cloud</h1>
+            <p class="section-intro">Use the Create next fiscal year workflow to open the new year, select the capital ledger, and carry closing balances into the next accounting period.</p>
+            <div class="blog-meta" aria-label="Blog details">
+                <span>Author: <a href="https://www.linkedin.com/in/princekf/">Prince Francis</a></span>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/princekf/">princekf</a></span>
+                <span>Created at: <time datetime="2026-07-13T23:30:00+05:30">2026-07-13 23:30:00 IST</time></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article-section">
+        <div class="container">
+            <article class="blog-article">
+                <p>At the end of an accounting year, a business needs a clean way to continue bookkeeping without losing the balances built up in the previous year. In Daybook.Cloud, the <strong>Create next fiscal year</strong> action creates the next period and transfers balances so the new year starts with the correct opening position.</p>
+                <p>This guide explains how to create the next financial year from the Fiscal Year page and why the capital ledger selection matters during balance transfer.</p>
+
+                <h2>Before you start</h2>
+                <p>Review the current books before rolling forward. The rollover should normally be done after the team has checked important year-end numbers and confirmed the capital or equity ledger with an accountant.</p>
+                <ul>
+                    <li>Confirm that the latest fiscal year is the year you want to roll forward from.</li>
+                    <li>Review pending invoices, payments, receipts, journals, and adjustments for the closing year.</li>
+                    <li>Choose the capital ledger that should receive the transferred result, such as <strong>Reserves and Surplus</strong>, <strong>Share Capital</strong>, or another accountant-approved equity ledger.</li>
+                    <li>Make sure users know which financial year they should post new transactions into after the rollover.</li>
+                </ul>
+
+                <h2>Step 1: Open the Fiscal Year page</h2>
+                <p>In Daybook.Cloud, open the left navigation and go to <strong>Management</strong>. Select <strong>Fiscal Year</strong>. The page lists each financial year with its start date, end date, currency, and available actions.</p>
+                <p>Use this page to confirm the existing sequence before creating the next year. For example, if the list ends at <strong>2026-2027</strong>, the next generated period should be the following financial year.</p>
+                <figure class="blog-figure">
+                    <img src="fiscal-year-list.png" alt="Daybook.Cloud Fiscal Year page showing the Management Fiscal Year menu and Create next fiscal year button" loading="lazy" decoding="async">
+                    <figcaption>Open Management &gt; Fiscal Year, then review the list before using Create next fiscal year.</figcaption>
+                </figure>
+
+                <h2>Step 2: Click Create next fiscal year</h2>
+                <p>Click <strong>Create next fiscal year</strong> from the action bar. Daybook.Cloud opens a rollover dialog instead of asking you to manually type the next start and end dates. This keeps the period sequence consistent with the latest fiscal year already present in the list.</p>
+
+                <h2>Step 3: Select the capital ledger</h2>
+                <p>In the dialog, select the <strong>Capital ledger</strong>. This ledger is required because balance transfer needs an equity or capital account to carry the closing result into the next year.</p>
+                <p>Many teams use <strong>Reserves and Surplus</strong> for this purpose, but the correct ledger depends on your chart of accounts and accountant-approved closing process. If you are unsure, confirm the ledger before creating the next fiscal year.</p>
+                <figure class="blog-figure">
+                    <img src="select-capital-ledger.png" alt="Create next fiscal year dialog showing the Capital ledger search with Drawings, Reserves and Surplus, and Share Capital options" loading="lazy" decoding="async">
+                    <figcaption>Choose the capital or equity ledger that should be used during the balance transfer.</figcaption>
+                </figure>
+
+                <h2>Step 4: Create the next financial year</h2>
+                <p>After selecting the capital ledger, click <strong>Create</strong>. Daybook.Cloud creates the next fiscal year and transfers balances from the closing year into the new year.</p>
+                <p>The transfer helps the business continue bookkeeping with opening balances in place, instead of manually recreating ledger balances for the new period.</p>
+                <figure class="blog-figure">
+                    <img src="create-next-fiscal-year.png" alt="Create next fiscal year dialog with Reserves and Surplus selected and the Create button highlighted" loading="lazy" decoding="async">
+                    <figcaption>Select the capital ledger, then click Create to roll the fiscal year forward and transfer balances.</figcaption>
+                </figure>
+
+                <h2>Step 5: Verify the new year</h2>
+                <p>After creation, return to the Fiscal Year list and confirm that the new period appears with the expected start date, end date, and currency. Then switch to the new financial year and review key ledger balances before entering new transactions.</p>
+                <ul>
+                    <li>Check that the new fiscal year has been added only once.</li>
+                    <li>Review opening balances for bank, cash, receivable, payable, loan, and capital accounts.</li>
+                    <li>Confirm that the selected capital ledger reflects the transferred closing result correctly.</li>
+                    <li>Post new invoices, receipts, payments, and journals in the new fiscal year only after the balances look correct.</li>
+                </ul>
+
+                <h2>Why balance transfer matters</h2>
+                <p>A financial year rollover is more than adding a new date range. Balance sheet ledgers such as cash, bank, receivables, payables, loans, duties, and equity need to continue into the next year. Without balance transfer, teams may see incomplete opening positions and spend time correcting ledger reports later.</p>
+                <p>The Daybook.Cloud rollover workflow reduces that manual effort by combining next-year creation with balance carry-forward in one controlled action.</p>
+
+                <h2>Good practices for year-end rollover</h2>
+                <ul>
+                    <li>Run important reports before the rollover so the closing year can be reviewed.</li>
+                    <li>Finish pending year-end journals before transferring balances.</li>
+                    <li>Use a capital ledger that matches your accounting policy.</li>
+                    <li>Keep the old financial year available for review, audit, and corrections if your process allows approved back-dated entries.</li>
+                    <li>Train users to check the selected fiscal year at the top of the app before posting transactions.</li>
+                </ul>
+
+                <div class="blog-next-step">
+                    <h2>Open the next year with balances ready.</h2>
+                    <p>Create the next fiscal year in Daybook.Cloud, transfer closing balances, and continue bookkeeping in the new financial year with a cleaner starting point.</p>
+                    <a href="https://app.daybook.cloud" class="button button-primary">Try for Free - No Credit Card Needed</a>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Daybook.Cloud home">
+                        <img src="/assets/logo/daybook-cloud-logo-small.svg" alt="" class="footer-logo-img" aria-hidden="true">
+                        <span>Daybook.Cloud</span>
+                    </a>
+                    <p class="footer-tagline">Simple bookkeeping and finance management for growing businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="/features.html">Features</a></li>
+                            <li><a href="/blogs/index.html">Blogs</a></li>
+                            <li><a href="/announcements/index.html">Announcements</a></li>
+                            <li><a href="/security.html">Security</a></li>
+                            <li><a href="https://app.daybook.cloud">Try for free</a></li>
+                            <li><a href="https://app.daybook.cloud">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Workflows</h4>
+                        <ul>
+                            <li><a href="/features.html#invoicing">Invoicing</a></li>
+                            <li><a href="/features.html#multi-currency">Multi-currency</a></li>
+                            <li><a href="/features.html#journals">Journals</a></li>
+                            <li><a href="/features.html#gst">GST reconciliation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daybook.Cloud. A product of Tociva Private Limited.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
